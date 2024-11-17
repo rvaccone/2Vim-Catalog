@@ -9,7 +9,7 @@ return {
         pre_setup = [[]],
         settings = {
             {
-                name = "layout_strategy",
+                name = "Layout Strategy",
                 description = "Layout strategy for telescope windows",
                 path = "defaults.layout_strategy",
                 type = "choice",
