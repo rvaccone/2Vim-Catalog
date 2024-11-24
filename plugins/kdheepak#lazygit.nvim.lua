@@ -17,15 +17,15 @@ return {
             {
                 name = "Lazygit",
                 description = "Start a floating window with lazygit in the current working directory",
-                lua_command = "<cmd>LazyGit<cr>"
+                command = "<cmd>LazyGit<cr>"
             }, {
                 name = "Lazygit current file",
                 description = "Start a floating window with lazygit in the project root of the current file",
-                lua_command = "<cmd>LazyGitCurrentFile<cr>"
+                command = "<cmd>LazyGitCurrentFile<cr>"
             }, {
                 name = "Lazygit config",
                 description = "Open the lazygit config file",
-                lua_command = "<cmd>LazyGitConfig<cr>"
+                command = "<cmd>LazyGitConfig<cr>"
             }
         }
     }

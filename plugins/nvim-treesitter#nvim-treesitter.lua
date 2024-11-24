@@ -96,7 +96,7 @@ return {
                 name = "find_files",
                 description = "Find files",
                 modes = {"normal"},
-                lua_command = "require('telescope.builtin').find_files()"
+                command = "require('telescope.builtin').find_files()"
             }
         }
     }

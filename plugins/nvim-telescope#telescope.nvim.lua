@@ -105,200 +105,200 @@ return {
             {
                 name = "find_files",
                 description = "Lists files in your current working directory, respects .gitignore",
-                lua_command = "require('telescope.builtin').find_files()"
+                command = "require('telescope.builtin').find_files()"
             }, {
                 name = "git_files",
                 description = "Fuzzy search through the output of git ls-files command, respects .gitignore",
-                lua_command = "require('telescope.builtin').git_files()"
+                command = "require('telescope.builtin').git_files()"
             }, {
                 name = "grep_string",
                 description = "Searches for the string under your cursor or selection in your current working directory",
-                lua_command = "require('telescope.builtin').grep_string()"
+                command = "require('telescope.builtin').grep_string()"
             }, {
                 name = "live_grep",
                 description = "Search for a string in your current working directory and get results live as you type, respects .gitignore. (Requires ripgrep)",
-                lua_command = "require('telescope.builtin').live_grep()"
+                command = "require('telescope.builtin').live_grep()"
             }, -- Vim pickers
             {
                 name = "buffers",
                 description = "Lists open buffers in current neovim instance",
-                lua_command = "require('telescope.builtin').buffers()"
+                command = "require('telescope.builtin').buffers()"
             }, {
                 name = "oldfiles",
                 description = "Lists previously open files",
-                lua_command = "require('telescope.builtin').oldfiles()"
+                command = "require('telescope.builtin').oldfiles()"
             }, {
                 name = "commands",
                 description = "Lists available plugin/user commands and runs them on <cr>",
-                lua_command = "require('telescope.builtin').commands()"
+                command = "require('telescope.builtin').commands()"
             }, {
                 name = "search_history",
                 description = "Lists searches that were executed recently, and reruns them on <cr>",
-                lua_command = "require('telescope.builtin').search_history()"
+                command = "require('telescope.builtin').search_history()"
             }, {
                 name = "help_tags",
                 description = "Lists available help tags and opens a new window with the relevant help info on <cr>",
-                lua_command = "require('telescope.builtin').help_tags()"
+                command = "require('telescope.builtin').help_tags()"
             }, {
                 name = "man_pages",
                 description = "Lists manpage entries, opens them in a help window on <cr>",
-                lua_command = "require('telescope.builtin').man_pages()"
+                command = "require('telescope.builtin').man_pages()"
             }, {
                 name = "marks",
                 description = "Lists vim marks and their value",
-                lua_command = "require('telescope.builtin').marks()"
+                command = "require('telescope.builtin').marks()"
             }, {
                 name = "colorscheme",
                 description = "Lists available colorschemes and applies them on <cr>",
-                lua_command = "require('telescope.builtin').colorscheme()"
+                command = "require('telescope.builtin').colorscheme()"
             }, {
                 name = "quickfix",
                 description = "Lists items in the quickfix list",
-                lua_command = "require('telescope.builtin').quickfix()"
+                command = "require('telescope.builtin').quickfix()"
             }, {
                 name = "quickfixhistory",
                 description = "Lists all quickfix lists in your history and open them with builtin.quickfix or quickfix window",
-                lua_command = "require('telescope.builtin').quickfixhistory()"
+                command = "require('telescope.builtin').quickfixhistory()"
             }, {
                 name = "loclist",
                 description = "	Lists items from the current window's location list",
-                lua_command = "require('telescope.builtin').loclist()"
+                command = "require('telescope.builtin').loclist()"
             }, {
                 name = "jumplist",
                 description = "Lists Jump List entries",
-                lua_command = "require('telescope.builtin').jumplist()"
+                command = "require('telescope.builtin').jumplist()"
             }, {
                 name = "vim_options",
                 description = "	Lists vim options, allows you to edit the current value on <cr>",
-                lua_command = "require('telescope.builtin').vim_options()"
+                command = "require('telescope.builtin').vim_options()"
             }, {
                 name = "registers",
                 description = "Lists vim registers, pastes the contents of the register on <cr>",
-                lua_command = "require('telescope.builtin').registers()"
+                command = "require('telescope.builtin').registers()"
             }, {
                 name = "autocommands",
                 description = "Lists vim autocommands and goes to their declaration on <cr>",
-                lua_command = "require('telescope.builtin').autocommands()"
+                command = "require('telescope.builtin').autocommands()"
             }, {
                 name = "spell_suggest",
                 description = "Lists spelling suggestions for the current word under the cursor, replaces word with selected suggestion on <cr>",
-                lua_command = "require('telescope.builtin').spell_suggest()"
+                command = "require('telescope.builtin').spell_suggest()"
             }, {
                 name = "keymaps",
                 description = "Lists normal mode keymappings",
-                lua_command = "require('telescope.builtin').keymaps()"
+                command = "require('telescope.builtin').keymaps()"
             }, {
                 name = "filetypes",
                 description = "Lists all available filetypes",
-                lua_command = "require('telescope.builtin').filetypes()"
+                command = "require('telescope.builtin').filetypes()"
             }, {
                 name = "highlights",
                 description = "Lists all available highlights",
-                lua_command = "require('telescope.builtin').highlights()"
+                command = "require('telescope.builtin').highlights()"
             }, {
                 name = "current_buffer_fuzzy_find",
                 description = "Live fuzzy search inside of the currently open buffer",
-                lua_command = "require('telescope.builtin').current_buffer_fuzzy_find()"
+                command = "require('telescope.builtin').current_buffer_fuzzy_find()"
             }, {
                 name = "current_buffer_tags",
                 description = "Lists all of the tags for the currently open buffer, with a preview",
-                lua_command = "require('telescope.builtin').current_buffer_tags()"
+                command = "require('telescope.builtin').current_buffer_tags()"
             }, {
                 name = "resume",
                 description = "	Lists the results incl. multi-selections of the previous picker",
-                lua_command = "require('telescope.builtin').resume()"
+                command = "require('telescope.builtin').resume()"
             }, {
                 name = "pickers",
                 description = "Lists the previous pickers incl. multi-selections (see :h telescope.defaults.cache_picker)",
-                lua_command = "require('telescope.builtin').pickers()"
+                command = "require('telescope.builtin').pickers()"
             }, -- LSP Pickers
             {
                 name = "lsp_references",
                 description = "Lists LSP references for word under the cursor",
-                lua_command = "require('telescope.builtin').lsp_references()"
+                command = "require('telescope.builtin').lsp_references()"
             }, {
                 name = "lsp_incoming_calls",
                 description = "Lists LSP incoming calls for word under the cursor",
-                lua_command = "require('telescope.builtin').lsp_incoming_calls()"
+                command = "require('telescope.builtin').lsp_incoming_calls()"
             }, {
                 name = "lsp_outgoing_calls",
                 description = "Lists LSP outgoing calls for word under the cursor",
-                lua_command = "require('telescope.builtin').lsp_outgoing_calls()"
+                command = "require('telescope.builtin').lsp_outgoing_calls()"
             }, {
                 name = "lsp_document_symbols",
                 description = "Lists LSP document symbols in the current buffer",
-                lua_command = "require('telescope.builtin').lsp_document_symbols()"
+                command = "require('telescope.builtin').lsp_document_symbols()"
             }, {
                 name = "lsp_workspace_symbols",
                 description = "Lists LSP document symbols in the current workspace",
-                lua_command = "require('telescope.builtin').lsp_workspace_symbols()"
+                command = "require('telescope.builtin').lsp_workspace_symbols()"
             }, {
                 name = "lsp_dynamic_workspace_symbols",
                 description = "Dynamically Lists LSP for all workspace symbols",
-                lua_command = "require('telescope.builtin').lsp_dynamic_workspace_symbols()"
+                command = "require('telescope.builtin').lsp_dynamic_workspace_symbols()"
             }, {
                 name = "diagnostics",
                 description = "Lists Diagnostics for all open buffers or a specific buffer. Use option bufnr=0 for current buffer",
-                lua_command = "require('telescope.builtin').diagnostics()"
+                command = "require('telescope.builtin').diagnostics()"
             }, {
                 name = "lsp_implementations",
                 description = "Goto the implementation of the word under the cursor if there's only one, otherwise show all options in Telescope",
-                lua_command = "require('telescope.builtin').lsp_implementations()"
+                command = "require('telescope.builtin').lsp_implementations()"
             }, {
                 name = "lsp_definitions",
                 description = "Goto the definition of the word under the cursor, if there's only one, otherwise show all options in Telescope",
-                lua_command = "require('telescope.builtin').lsp_definitions()"
+                command = "require('telescope.builtin').lsp_definitions()"
             }, {
                 name = "lsp_type_definitions",
                 description = "	Goto the definition of the type of the word under the cursor, if there's only one, otherwise show all options in Telescope",
-                lua_command = "require('telescope.builtin').lsp_type_definitions()"
+                command = "require('telescope.builtin').lsp_type_definitions()"
             }, -- Git Pickers
             {
                 name = "git_commits",
                 description = "	Lists git commits with diff preview, checkout action <cr>, reset mixed <C-r>m, reset soft <C-r>s and reset hard <C-r>h",
-                lua_command = "require('telescope.builtin').git_commits()"
+                command = "require('telescope.builtin').git_commits()"
             }, {
                 name = "git_bcommits",
                 description = "Lists buffer's git commits with diff preview and checks them out on <cr>",
-                lua_command = "require('telescope.builtin').git_bcommits()"
+                command = "require('telescope.builtin').git_bcommits()"
             }, {
                 name = "git_bcommits_range",
                 description = "Lists buffer's git commits in a range of lines. Use options from and to to specify the range. In visual mode, lists commits for the selected lines",
-                lua_command = "require('telescope.builtin').git_bcommits_range()"
+                command = "require('telescope.builtin').git_bcommits_range()"
             }, {
                 name = "git_branches",
                 description = "	Lists all branches with log preview, checkout action <cr>, track action <C-t>, rebase action<C-r>, create action <C-a>, switch action <C-s>, delete action <C-d> and merge action <C-y>",
-                lua_command = "require('telescope.builtin').git_branches()"
+                command = "require('telescope.builtin').git_branches()"
             }, {
                 name = "git_status",
                 description = "Lists current changes per file with diff preview and add action. (Multi-selection still WIP)",
-                lua_command = "require('telescope.builtin').git_status()"
+                command = "require('telescope.builtin').git_status()"
             }, {
                 name = "git_stash",
                 description = "Lists stash items in current repository with ability to apply them on <cr>",
-                lua_command = "require('telescope.builtin').git_stash()"
+                command = "require('telescope.builtin').git_stash()"
             }, -- Treesitter Pickers
             {
                 name = "treesitter",
                 description = "Lists Function names, variables, from Treesitter!",
-                lua_command = "require('telescope.builtin').treesitter()"
+                command = "require('telescope.builtin').treesitter()"
             }, -- Lists Pickers
             {
                 name = "planets",
                 description = "Use the telescope...",
-                lua_command = "require('telescope.builtin').planets()"
+                command = "require('telescope.builtin').planets()"
             }, {
                 name = "builtin",
                 description = "ltin	Lists Built-in pickers and run them on <cr>",
-                lua_command = "require('telescope.builtin').builtin()"
+                command = "require('telescope.builtin').builtin()"
             }, {
                 name = "reloader",
                 description = "Lists Lua modules and reload them on <cr>",
-                lua_command = "require('telescope.builtin').reloader()"
+                command = "require('telescope.builtin').reloader()"
             }, {
                 name = "symbols",
                 description = "Lists symbols inside a file data/telescope-sources/*.json found in your rtp. More info and symbol sources can be found here https://github.com/nvim-telescope/telescope-symbols.nvim",
-                lua_command = "require('telescope.builtin').symbols()"
+                command = "require('telescope.builtin').symbols()"
             }
         }
     }

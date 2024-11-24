@@ -13,19 +13,19 @@ return {
             {
                 name = "Tree toggle",
                 description = "Open or close the tree",
-                lua_command = "<cmd>NvimTreeToggle<cr>"
+                command = "<cmd>NvimTreeToggle<cr>"
             }, {
                 name = "Tree focus",
                 description = "Open the tree if it is closed, and then focus on the tree",
-                lua_command = "<cmd>NvimTreeFocus<cr>"
+                command = "<cmd>NvimTreeFocus<cr>"
             }, {
                 name = "Find file",
                 description = "Move the cursor in the tree for the current buffer, opening folders if needed",
-                lua_command = "<cmd>NvimTreeFindFile<cr>"
+                command = "<cmd>NvimTreeFindFile<cr>"
             }, {
                 name = "Tree collapse",
                 description = "Collapse the tree recursively",
-                lua_command = "<cmd>NvimTreeCollapse<cr>"
+                command = "<cmd>NvimTreeCollapse<cr>"
             }
         }
     }
